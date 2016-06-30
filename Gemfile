@@ -8,4 +8,5 @@ group :development, :test do
     gem('pry')
     gem('guard')
     gem('guard-rspec')
+    gem('capybara')
 end

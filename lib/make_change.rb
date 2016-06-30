@@ -9,12 +9,12 @@ class String
       user_input = user_input.%(25)
     end
     if user_input >= 10
-      number_of_dimes = user_input./(10)
+      number_of_dimes = user_input./(10).floor()
       temp_hash.store("dimes", number_of_dimes)
       user_input = user_input.%(10)
     end
     if user_input >= 5
-      number_of_nickels = user_input./(5)
+      number_of_nickels = user_input./(5).floor()
       temp_hash.store("nickels", number_of_nickels)
       user_input = user_input.%(5)
     end
@@ -22,7 +22,6 @@ class String
       number_of_pennies = user_input
       temp_hash.store("pennies", number_of_pennies)
     end
-puts change_hash.merge(temp_hash)
     change_hash.merge(temp_hash)
   end
 end
