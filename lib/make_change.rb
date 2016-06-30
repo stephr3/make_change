@@ -7,6 +7,9 @@ class String
     elsif user_input >= 10
       number_of_dimes = user_input./(10)
       number_of_dimes
+    elsif user_input >= 5
+      number_of_nickels = user_input./(5)
+      number_of_nickels
     end
   end
 end
