@@ -10,6 +10,9 @@ class String
     elsif user_input >= 5
       number_of_nickels = user_input./(5)
       number_of_nickels
+    else
+      number_of_pennies = user_input
+      number_of_pennies
     end
   end
 end

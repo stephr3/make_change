@@ -13,4 +13,9 @@ describe('String#make_change') do
   it('returns 1 nickel if user enters 5 cents') do
     expect("5".make_change()).to(eq(1))
   end
+
+  it('returns 4 pennies if user enters 4 cents') do
+    expect("4".make_change()).to(eq(4))
+  end
+
 end
