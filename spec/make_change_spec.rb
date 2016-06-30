@@ -21,4 +21,12 @@ describe('String#make_change') do
   it('returns 2 quarters and 1 dime if user enters 60 cents') do
     expect("60".make_change()).to(eq({"quarters"=>2, "dimes"=>1, "nickels"=>0, "pennies"=>0}))
   end
+
+  it('returns 2 quarters, 1 dime, and 1 nickel if user enters 65 cents') do
+    expect("65".make_change()).to(eq({"quarters"=>2, "dimes"=>1, "nickels"=>1, "pennies"=>0}))
+  end
+
+  it('returns 2 quarters, 1 dime, 1 nickel and 1 penny if user enters 66 cents') do
+    expect("66".make_change()).to(eq({"quarters"=>2, "dimes"=>1, "nickels"=>1, "pennies"=>1}))
+  end
 end
